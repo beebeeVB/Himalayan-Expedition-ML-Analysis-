@@ -109,4 +109,29 @@ install.packages(c(
 
 ### Data setup
 
-Download the HimEx dataset and place the three CSV files at:
+Download the HimEx dataset and place the three CSV files at the link given.
+
+Or update the file paths at the top of `Final_Script_SC398.R` to match 
+your local directory.
+
+### Run
+
+Open `Final_Script_SC398.R` in RStudio and run the full script. Plots 
+render sequentially in the Plots pane.
+
+---
+
+## File
+
+| File | Description |
+|---|---|
+| `Final_Script_SC398.R` | Complete analysis — data prep, models, SHAP, LIME, conformal prediction |
+
+---
+
+## Methods
+
+Follows the Molnar interpretable ML pipeline:  
+global importance (SHAP) → uncertainty quantification (conformal prediction) 
+→ local explanation (LIME). Random Forest chosen for its non-linearity and 
+compatibility with model-agnostic explanation methods.
